@@ -28,14 +28,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Article
+        <ArticleContainer
           article={
             Object {
               "id": 2,
             }
           }
         />,
-        <Article
+        <ArticleContainer
           article={
             Object {
               "id": 1,
@@ -49,7 +49,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "2",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "article": Object {
             "id": 2,
@@ -62,7 +62,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "1",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "article": Object {
             "id": 1,
@@ -82,14 +82,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Article
+          <ArticleContainer
             article={
               Object {
                 "id": 2,
               }
             }
           />,
-          <Article
+          <ArticleContainer
             article={
               Object {
                 "id": 1,
@@ -103,7 +103,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "2",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "article": Object {
               "id": 2,
@@ -116,7 +116,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "1",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "article": Object {
               "id": 1,
