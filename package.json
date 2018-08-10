@@ -4,15 +4,20 @@
   "main": "lib/server.js",
   "license": "MIT",
   "scripts": {
+    "test": "jest --watchAll",
+    "verify-tests": "jest --coverage",
     "dev": "nodemon lib/server.js --exec babel-node",
     "build-dev": "webpack -wd",
-    "test": "jest --watchAll"
+    "build-prod": "webpack -p",
+    "build-node": "babel lib -d build --copy-files"
   },
   "babel": {
     "presets": [
       "react",
-      "env",
-      "stage-2"
+      ["env", {"targets": {"node": "current"}}]
+    ],
+    "plugins": [
+      "transform-class-properties", "transform-object-rest-spread"
     ]
   },
   "devDependencies": {

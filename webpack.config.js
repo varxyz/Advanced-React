@@ -10,7 +10,9 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        use: 'babel-loader',
+        use: {loader: 'babel-loader', options: {
+          presets: ['react', 'env', 'stage-2']
+        }},
         exclude: /node_modules/
       }
     ]
